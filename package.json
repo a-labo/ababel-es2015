@@ -1,6 +1,6 @@
 {
   "name": "ababel-es2015",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ababel with es2015 flavor",
   "main": "lib",
   "scripts": {
@@ -23,10 +23,11 @@
   "homepage": "https://github.com/a-labo/ababel-es2015#readme",
   "dependencies": {
     "babel-preset-es2015": "^6.9.0",
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "defaults": "^1.0.3"
   },
   "devDependencies": {
-    "ababel": "^1.0.19",
+    "ababel": "^1.0.22",
     "amocha": "^1.0.8",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.2",
