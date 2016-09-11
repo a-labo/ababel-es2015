@@ -8,9 +8,9 @@
 const transform = require('ababel/transform')
 
 /** @lends transformES2015 */
-function transformES2015 (options = {}) {
-  let { presets } = options
-  options.presets = [ 'es2015' ].concat(presets || [])
+function transformES2015 (options) {
+  options = options || {}
+  options.presets = [ 'es2015' ].concat(options.presets || [])
   return transform(options)
 }
 

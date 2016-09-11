@@ -8,9 +8,9 @@
 const register = require('ababel/register')
 
 /** @lends registerES2015 */
-function registerES2015 (options = {}) {
-  let { presets } = options
-  options.presets = [ 'es2015' ].concat(presets || [])
+function registerES2015 (options) {
+  options = options || {}
+  options.presets = [ 'es2015' ].concat(options.presets || [])
   register(options)
 }
 
