@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 
 /**
- * Compile to browser source
+ * Prepare shims
  */
 
 'use strict'
 
 process.chdir(`${__dirname}/..`)
 
-const { runTasks } = require('ape-tasking')
-const ababelES2015 = require('../lib')
+const apeTasking = require('ape-tasking')
+const ababel = require('ababel')
 
-runTasks('shims', [
-  () => ababelES2015('**/*.js', {
+apeTasking.runTasks('shim', [
+  () => ababel('**/*.js', {
     cwd: 'lib',
-    out: 'shim/node'
+    out: 'shim/node',
+    presets: [ 'es2015' ]
   })
 ], true)

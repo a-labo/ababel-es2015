@@ -1,11 +1,12 @@
 {
   "name": "ababel-es2015",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "ababel with es2015 flavor",
-  "main": "lib",
+  "main": "shim/node",
+  "browser": false,
   "scripts": {
-    "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "test": "node ./ci/test.js",
+    "prepublish": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "a-labo/ababel-es2015",
   "keywords": [
@@ -26,20 +27,20 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ababel": "^1.1.4",
+    "ababel": "^1.1.7",
     "amocha": "^1.0.15",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.15",
+    "ape-tmpl": "^5.0.19",
     "ape-updating": "^4.0.5",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=4",
+    "npm": ">=2"
   },
   "peerDependencies": {
     "ababel": ">=1"
