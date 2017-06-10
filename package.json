@@ -1,6 +1,6 @@
 {
   "name": "ababel-es2015",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "ababel with es2015 flavor",
   "main": "lib",
   "browser": "shim/browser.js",
@@ -23,17 +23,17 @@
   },
   "homepage": "https://github.com/a-labo/ababel-es2015#readme",
   "dependencies": {
-    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ababel": "^2.0.0",
-    "amocha": "^1.0.16",
+    "ababel": "^2.0.1",
+    "amocha": "^2.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
-    "ape-updating": "^4.1.0",
+    "ape-updating": "^4.1.1",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0"
   },
